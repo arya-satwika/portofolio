@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@layer components{
+  .nav-text{
+    color: var(--color-black);
+    font-family: 'Geist Sans', sans-serif;
+  }
+}
 
 :root {
   --background: #ffffff;
