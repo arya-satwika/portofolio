@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Space_Mono, Space_Grotesk } from "next/font/google";
-import { Header } from "@/components/Header";
-import "@/app/globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,8 +24,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Arya Satwika - Portfolio",
-  description: "Landing Page for Arya Satwika",
+  title: "Projects - Arya Satwika",
+  description: "Projects portfolio of Arya Satwika",
 };
 
 export default function RootLayout({
@@ -38,9 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} text-white antialiased min-w-screen min-h-screen`}
+        className={`${spaceGrotesk.className} text-white antialiased max-h-screen min-w-screen`}
       >
-        <Header className="sticky top-0"/>
         {children}
       </body>
     </html>
