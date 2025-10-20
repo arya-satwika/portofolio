@@ -15,7 +15,7 @@ export function ContentGrid({children, className, images, title}: contentGridPro
       <hr className="border-solid border-0.2 mx-2 mt-2 mb-6 rounded-lg"/>
       </div>
       <div className={"flex flex-row justify-content-between gap-3"}>
-        <div className="grid grid-cols-1 gap-4 bg-card-foreground backdrop:blur-sm p-3 min-w-80 rounded-2xl inset-shadow-sm inset-shadow-red-100/45">
+        <div className="grid grid-cols-1 gap-4 bg-card-content backdrop:blur-sm p-3 min-w-80 rounded-2xl inset-shadow-sm inset-shadow-red-100/45">
           {images.map((image) => (
             <Image key={image.src} src={image.src} width={image.width} height={image.width} className="rounded-3xl" alt={image.alt} />
           ))}
