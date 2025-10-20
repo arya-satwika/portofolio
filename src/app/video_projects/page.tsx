@@ -4,7 +4,7 @@ export default function hobbiesPage(){
     return(
         <div>
             <div className="mx-30 mt-15 font-bold text-4xl">
-                Videos I've Made
+                Videos Ive Made
             </div>
             <div className="grid grid-cols-3">
                 <Image
