@@ -5,7 +5,7 @@ export default function ProjectsPage() {
     return (
         <div>
             <div className="mx-30 mt-15">
-                <h1 className="text-4xl font-bold mb-8">My Projects</h1>
+                <h1 className="text-4xl font-bold mb-8">My Coding Projects</h1>
 
                 <h2 className="text-2xl font-bold  text-main-red">Habit Clone</h2>
                 <hr className="mb-4 border-clickable "/>
