@@ -132,6 +132,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: linear-gradient(to bottom right, var(--color-gradient-start), var(--color-gradient-end));
+    @apply bg-linear-to-br from-gradient-start to-gradient-end;
   }
 }
