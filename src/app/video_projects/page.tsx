@@ -13,6 +13,12 @@ export default function hobbiesPage(){
                 height={1920}
                 alt="bf-gf"
                 />
+                <Image
+                src="/video_projects/gambes-mania.gif"
+                width={1280}
+                height={720}
+                alt="gambes-mania"
+                />
             </div>
         </div>
     
