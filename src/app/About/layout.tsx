@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} text-white antialiased min-h-screen min-w-screen`}
+        className={`${spaceGrotesk.className} text-white antialiased min-w-screen min-h-screen`}
       >
         {children}
       </body>

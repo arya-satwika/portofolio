@@ -1,4 +1,5 @@
 import { div } from "motion/react-client"
+import { CV } from "@/components/CV"
 
 export default function About() {
     return (
@@ -39,6 +40,7 @@ export default function About() {
             </div>
             <img src="/headshot.png" width={600} alt="" />
             </div>
+            <CV className="my-10" />
         </div>
     )
 }
