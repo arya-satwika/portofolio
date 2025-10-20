@@ -38,9 +38,13 @@ export default function About() {
                 </div>
             </div>
             </div>
-            <Image src="/headshot.png" height={600} width={600} alt="me" />
+            <Image src="/headshot.webp" 
+            width={1000}
+            height={1000}
+            alt="me"
+            className="w-[600px] h-[600px]"/>
             </div>
-            <CV className="my-10" />
+            <CV className="my-10 mx-20" />
         </div>
     )
 }

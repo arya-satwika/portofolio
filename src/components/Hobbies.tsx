@@ -17,7 +17,7 @@ export type hobbiesProps ={
   contents:  {
     title: string;
     description: string;
-    image: { src: string, alt: string, width: number };
+    image: { src: string, alt: string, width: number, height: number };
   }[]
 }
 
@@ -72,9 +72,9 @@ export function Hobbies({ className, contents }: hobbiesProps) {
               <Image
                 src={currentContent.image.src}
                 width={currentContent.image.width}
-                height={currentContent.image.width}
+                height={currentContent.image.height}
                 alt={currentContent.image.alt}
-                className="rounded-2xl max-w-[500px] min-w-[500px] h-[500px] object-cover "
+                className="rounded-2xl h-[500px] object-cover "
               />
 
           </motion.div>
@@ -85,13 +85,13 @@ export function Hobbies({ className, contents }: hobbiesProps) {
         <Pagination className="flex flex-row gap-3">
           <PaginationContent>
             <PaginationItem className="cursor-pointer">
-              <PaginationPrevious onClick={handlePrev}  className="hover:bg-clickable hover:text-gray-100"/>
+              <PaginationPrevious onClick={handlePrev} className="hover:bg-clickable hover:text-gray-100"/>
             </PaginationItem>
             <PaginationItem>
               <PaginationLink className="hover:bg-white/0 hover:text-white cursor-default">{currentIndex + 1} / {contents.length}</PaginationLink>
             </PaginationItem>
             <PaginationItem className="cursor-pointer">
-              <PaginationNext onClick={handleNext} className="hover:bg-clickable hover:text-gray-100"/>
+              <PaginationNext onClick={handleNext} className=" hover:bg-clickable hover:text-gray-100"/>
             </PaginationItem>
           </PaginationContent>
         </Pagination>

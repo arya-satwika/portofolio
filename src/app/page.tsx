@@ -21,7 +21,7 @@ export default function Home() {
             ingin menjadi Fullstack Web Developer dan UI/UX Designer di masa depan.
           </p>
           </div>
-          <Image src="/headshot.png" width={400} height={400} alt="" className='row-span-2 place-self-start'/>
+          <Image src="/headshot.webp" width={1000} height={1000} alt="" className='row-span-2 place-self-start w-[450px]'/>
         </div>
         {/* <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/> */}
         <ContentGrid
@@ -59,19 +59,22 @@ export default function Home() {
             description: "Saya suka bermain game, terutama game kompetitif FPS seperti Valorant, The Finals." + 
             "Saya juga menikmati game open-world yang slow paced seperti Legend of Zelda: Breath of the wild, " + 
             "Spider-man 1 dan 2, dan terkadang bermain game multiplayer bersama teman-temanku",
-            image: { src: "/games-1.png", alt: "Gaming Image", width: 300 }
+            image: { src: "/games-1.png", alt: "Gaming Image", width: 1170, height: 1572 }
           },
           {
             title: "Editing Video",
-            description: "Saya suka mengedit video, seperti video pendek untuk Instagram atau TikTok, menggunakan Adobe After Effects dan Davinci Resolve",
-            image: { src: "/AE-timeline.png", alt: "Editing Video Image", width: 500 }
+            description: "Saya suka mengedit video, seperti video pendek untuk Instagram atau TikTok, menggunakan" + 
+            " Adobe After Effects dan Davinci Resolve, mulai video editing karena ingin membuat konten youtube," +
+            " ternyata tidak semudah itu membuat konten youtube yang ingin ditonton orang orang, sekarang hanya" +
+            " mengedit karena iseng aja, dan saya suka melihat animasi yang smooth dan keren.",
+            image: { src: "/AE-timeline.png", alt: "Editing Video Image", width: 1405, height: 1025 }
           },
           {
             title: "Music",
             description: "Saya senang mendengarkan musik, terutama genre hip-hop dan lagu 2000-an. Beberapa artis favorit saya adalah Tyler, The Creator," +
             "Kendrick Lamar, Foxy Shazam, Lilas / YOASOBI. Belakangan ini saya mendapatkan lagu baru dari menonton film dan series yang dibuat oleh James Gunn, Director"+
             " yang selalu memasukkan lagu-lagu keren ke dalam filmnya dan selalu membuat saya menambah playlist saya.",
-            image: { src: "/musics-tiles.png", alt: "Music Image", width: 500}
+            image: { src: "/musics-tiles.png", alt: "Music Image", width: 1000, height: 1000}
           }
         ]}
       />
