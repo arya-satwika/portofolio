@@ -53,15 +53,8 @@ export function Hobbies({ className, contents }: hobbiesProps) {
             className="flex flex-row"
           >
             <div className="h-[500px]">
-              <Image
-                src={currentContent.image.src}
-                width={currentContent.image.width}
-                height={currentContent.image.width}
-                alt={currentContent.image.alt}
-                className="rounded-2xl max-w-[500px] min-w-[500px] h-[500px] object-cover "
-              />
             </div>
-            <div className="ml-8">
+            <div className="mr-8">
               <h2 className="text-2xl text-main-red mb-2">
                 {currentContent.title}
               </h2>
@@ -69,6 +62,13 @@ export function Hobbies({ className, contents }: hobbiesProps) {
                 {currentContent.description}
               </p>
             </div>
+              <Image
+                src={currentContent.image.src}
+                width={currentContent.image.width}
+                height={currentContent.image.width}
+                alt={currentContent.image.alt}
+                className="rounded-2xl max-w-[500px] min-w-[500px] h-[500px] object-cover "
+              />
 
           </motion.div>
         </AnimatePresence>

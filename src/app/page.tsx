@@ -23,14 +23,14 @@ export default function Home() {
           </div>
           <img src="/headshot.png" width={400} alt="" className='row-span-2 place-self-start'/>
         </div>
-        <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/>
+        {/* <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/> */}
         <ContentGrid
           images={[
             { src: "habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 400 },
             { src: "tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
           ]}
           title="Projects"
-          className="max-w-300"
+          className="max-w-310"
         >
           <ul className="list-disc">
             <li>
