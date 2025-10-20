@@ -3,6 +3,15 @@ import { useState } from "react";
 import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
 import Image from "next/image";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination"
 
 export type hobbiesProps ={
   className?: string;
@@ -13,6 +22,12 @@ export type hobbiesProps ={
   }[]
 }
 
+function dots(){
+  return(
+    <div className="w-50">
+    </div>
+  )
+}
 
 export function Hobbies({ className, contents }: hobbiesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -75,18 +90,19 @@ export function Hobbies({ className, contents }: hobbiesProps) {
       </div>
 
       <div className="mt-4 flex items-center justify-between">
-        <button
-          onClick={handlePrev}
-          className="rounded bg-gray-200 px-3 py-1 hover:bg-gray-300"
-        >
-          Previous
-        </button>
-        <button
-          onClick={handleNext}
-          className="rounded bg-blue-600 px-3 py-1 text-white hover:bg-blue-700"
-        >
-          Next
-        </button>
+        <Pagination className="flex flex-row gap-3">
+          <PaginationContent>
+            <PaginationItem className="cursor-pointer">
+              <PaginationPrevious onClick={handlePrev} className="hover:bg-clickable-hover hover:text-gray-800"/>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink className="hover:bg-white/0 hover:text-white cursor-default">{currentIndex + 1} / {contents.length}</PaginationLink>
+            </PaginationItem>
+            <PaginationItem className="cursor-pointer">
+              <PaginationNext onClick={handleNext} className="hover:bg-clickable-hover hover:text-gray-800"/>
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
       </div>
     </div>
   );

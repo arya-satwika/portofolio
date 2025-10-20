@@ -1,21 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Space_Mono, Space_Grotesk } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
-  variable: "--font-space-mono",
-  subsets: ["latin"],
-});
+import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400", "700"],

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 type contentGridProps = {
   children?: React.ReactNode;
   className?: string;
@@ -15,7 +17,7 @@ export function ContentGrid({children, className, images, title}: contentGridPro
       <div className={"flex flex-row justify-content-between gap-3"}>
         <div className="grid grid-cols-1 gap-4 bg-card-foreground backdrop:blur-sm p-3 min-w-80 rounded-2xl inset-shadow-sm inset-shadow-red-100/45">
           {images.map((image) => (
-            <img key={image.src} src={image.src} width={image.width} className="rounded-3xl" alt={image.alt} />
+            <Image key={image.src} src={image.src} width={image.width} height={image.width} className="rounded-3xl" alt={image.alt} />
           ))}
         </div>
         <div className="text-pretty ml-8">

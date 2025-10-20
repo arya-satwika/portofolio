@@ -1,6 +1,6 @@
 import { Hobbies } from "@/components/Hobbies";
 import { ContentGrid } from "@/components/ContentGrid";
-import { Header } from "@/components/Header";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <div className="min-h-full min-w-screen">
       <div className="flex flex-col items-center">
-        <div className="flex flex-row mt-6 items-center">
+        <div className="flex flex-row mt-6 items-center mx-35">
           <div className='max-w-[900px]'>
           <h1 className="text-4xl font-bold">Hi, im 
             <span className="text-main-red"> Arya Satwika</span>
@@ -21,13 +21,13 @@ export default function Home() {
             ingin menjadi Fullstack Web Developer dan UI/UX Designer di masa depan.
           </p>
           </div>
-          <img src="/headshot.png" width={400} alt="" className='row-span-2 place-self-start'/>
+          <Image src="/headshot.png" width={400} height={400} alt="" className='row-span-2 place-self-start'/>
         </div>
         {/* <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/> */}
         <ContentGrid
           images={[
-            { src: "habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 400 },
-            { src: "tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
+            { src: "/habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 400 },
+            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
           ]}
           title="Projects"
           className="max-w-310"

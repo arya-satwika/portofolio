@@ -1,4 +1,3 @@
-import { div } from "motion/react-client"
 import { CV } from "@/components/CV"
 
 export default function About() {
