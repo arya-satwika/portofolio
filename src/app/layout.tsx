@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Grotesk, Space_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
 import "@/app/globals.css";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400", "700"],
   variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
+
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
+  variable: "--font-space-mono",
   subsets: ["latin"],
 });
 
@@ -21,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
-        className={`${spaceGrotesk.className} text-white antialiased min-w-screen min-h-screen`}
+        className={`${spaceGrotesk.className} text-white antialiased min-w-screen min-h-screen background-gradient`}
       >
         <Header className="sticky top-0"/>
         {children}

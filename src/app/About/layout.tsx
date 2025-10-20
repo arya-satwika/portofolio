@@ -12,18 +12,14 @@ export const metadata: Metadata = {
   description: "About page of Arya Satwika",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${spaceGrotesk.className} text-white antialiased min-w-screen min-h-screen`}
-      >
-        {children}
-      </body>
-    </html>
+    <section>
+      { children }
+    </section>
   );
 }
