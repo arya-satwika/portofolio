@@ -1,6 +1,6 @@
 export function Header({ className }: { className?: string }){
   return( 
-    <div className={`flex justify-between items-center p-2 bg-gradient-start/40 backdrop-blur-md max-h-20 w-screen ${className}`}>
+    <div className={`flex justify-between items-center p-2 bg-gradient-start/30 backdrop-blur-sm max-h-20 w-screen ${className}`}>
       <div className="flex  gap-2 items-center ml-3">
         <a href="/">
             <img src="icon-portofolio.svg" width={30} alt="" />

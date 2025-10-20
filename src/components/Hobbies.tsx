@@ -93,13 +93,13 @@ export function Hobbies({ className, contents }: hobbiesProps) {
         <Pagination className="flex flex-row gap-3">
           <PaginationContent>
             <PaginationItem className="cursor-pointer">
-              <PaginationPrevious onClick={handlePrev} className="hover:bg-clickable-hover hover:text-gray-800"/>
+              <PaginationPrevious onClick={handlePrev} className="hover:bg-clickable hover:text-gray-100"/>
             </PaginationItem>
             <PaginationItem>
               <PaginationLink className="hover:bg-white/0 hover:text-white cursor-default">{currentIndex + 1} / {contents.length}</PaginationLink>
             </PaginationItem>
             <PaginationItem className="cursor-pointer">
-              <PaginationNext onClick={handleNext} className="hover:bg-clickable-hover hover:text-gray-800"/>
+              <PaginationNext onClick={handleNext} className="hover:bg-clickable hover:text-gray-100"/>
             </PaginationItem>
           </PaginationContent>
         </Pagination>

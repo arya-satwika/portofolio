@@ -37,7 +37,7 @@ export default function ProjectsPage() {
             <div className="min-w-screen bg-main-red min-h-[200px] py-4 mt-4">
                 <div className='overflow-scroll'>
                 <motion.div 
-                className="flex flex-row min-h-fit items-center gap-5 overflow-scroll"
+                className="flex flex-row min-h-fit items-center gap-5"
                 initial={{ x: -400 }}
                 animate={{ x: 0 }}
                 transition={{ 
