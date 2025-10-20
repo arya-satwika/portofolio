@@ -6,7 +6,6 @@ import Image from "next/image";
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -20,13 +19,6 @@ export type hobbiesProps ={
     description: string;
     image: { src: string, alt: string, width: number };
   }[]
-}
-
-function dots(){
-  return(
-    <div className="w-50">
-    </div>
-  )
 }
 
 export function Hobbies({ className, contents }: hobbiesProps) {

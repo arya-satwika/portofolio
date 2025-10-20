@@ -1,4 +1,5 @@
 import { CV } from "@/components/CV"
+import Image from "next/image"
 
 export default function About() {
     return (
@@ -37,7 +38,7 @@ export default function About() {
                 </div>
             </div>
             </div>
-            <img src="/headshot.png" width={600} alt="" />
+            <Image src="/headshot.png" height={600} width={600} alt="me" />
             </div>
             <CV className="my-10" />
         </div>
