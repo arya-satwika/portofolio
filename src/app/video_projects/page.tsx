@@ -4,9 +4,15 @@ export default function hobbiesPage(){
     return(
         <div>
             <div className="mx-30 mt-15 font-bold text-4xl">
-                My Hobbies
+                Videos I've Made
             </div>
-            <div className="h-200 w-[50px] hover:w-[400px] bg-main-red text-center hover:h-50 object-cover transition-all duration-500 mx-30">
+            <div className="grid grid-cols-3">
+                <Image
+                src="/video_projects/bf-gf.gif"
+                width={2000}
+                height={1920}
+                alt="bf-gf"
+                />
             </div>
         </div>
     

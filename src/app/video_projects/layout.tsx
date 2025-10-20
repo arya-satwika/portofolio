@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hobbies - Arya Satwika",
-  description: "Hobbies page of Arya Satwika",
+  title: "Video Projects - Arya Satwika",
+  description: "Video Projects page of Arya Satwika",
 };
 
 export default function Layout({

@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Projects - Arya Satwika",
-  description: "Projects portfolio of Arya Satwika",
+  title: "Coding Projects - Arya Satwika",
+  description: "Coding Projects portfolio of Arya Satwika",
 };
 
 export default function Layout({
