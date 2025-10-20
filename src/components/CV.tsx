@@ -2,12 +2,8 @@ export function CV({ className }: { className?: string }) {
     return(
         <div className={className}>
         <div className="text-center pb-4">
-            {/* <h1 className="text-3xl font-bold text-main-red pb-2">Arya Satwika</h1>
-            <p className="font-normal text-sm">+62 812-2115-225 
-                 | 24051204069@mhs.unesa.ac.id
-            </p> */}
         </div>
-        <h2>Pendidikan</h2>
+        <h2 className="font-bold text-lg text-main-red mt-5">Pendidikan</h2>
         <hr/>
         <ul className="list-disc pl-5">
             <li>
@@ -24,7 +20,8 @@ export function CV({ className }: { className?: string }) {
             </li>
         </ul>
 
-        <h2>Pengalaman Kerja</h2>
+        <h2 className="font-bold text-lg text-main-red mt-5">Pengalaman Kerja</h2>
+        <hr/>
         <ul className="list-disc pl-5">
             <li>
                 <div className="flex flex-row justify-between">
@@ -34,7 +31,7 @@ export function CV({ className }: { className?: string }) {
             </li>
         </ul>
         
-        <h2>Workshop & Course</h2>
+        <h2 className="font-bold text-lg text-main-red mt-5">Workshop & Course</h2>
         <hr/>
         <ul className="list-disc pl-5">
             <li>
@@ -51,7 +48,7 @@ export function CV({ className }: { className?: string }) {
             </li>
         </ul>
         
-        <h2>Pengalaman Organisasi</h2>
+        <h2 className="font-bold text-lg text-main-red mt-5">Pengalaman Organisasi</h2>
         <hr/>
         <ul className="list-disc pl-5">
             <li>
@@ -62,7 +59,7 @@ export function CV({ className }: { className?: string }) {
             </li>
         </ul>
         
-        <h2>Tambahan</h2>
+        <h2 className="font-bold text-lg text-main-red mt-5">Tambahan</h2>
         <hr/>
         <div className="grid grid-cols-2 gap-4">
 
