@@ -16,4 +16,9 @@ Di Deploy menggunakan netlify
 4. /projects/video: Portoflio video yang saya edit atau bantu buat
 
 ### Tampilan Website
-[[homepage-1.png]]
+![[homepage-1.png]]
+![[homepage-2.png]]
+![[homepage-3.png]]
+![[about-1.png]]
+![[coding-1.png]]
+![[videos-1.png]]
