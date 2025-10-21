@@ -15,7 +15,7 @@ export default function hobbiesPage(){
                         width={2000}
                         height={1920}
                         alt="bf-gf"
-                        className="self-center scale-120"
+                        className="w-full h-full object-cover"
                         />
                     </div>
                     <h2 className="font-bold text-main-red text-lg my-3">Boyfriend - Girlfriend</h2>
@@ -29,7 +29,7 @@ export default function hobbiesPage(){
                         width={1280}
                         height={720}
                         alt="gambes-mania"
-                        className="scale-180 self-center"
+                        className="w-full h-full object-cover"
                         />
                     </div>
                     <h2 className="font-bold text-main-red text-lg my-3">Title Gambes Mania</h2>
@@ -42,7 +42,7 @@ export default function hobbiesPage(){
                         src="/video_projects/sebu-snippet.gif"
                         width={1280}
                         height={720}
-                        alt="gambes-mania"
+                        alt="uprak-sebu"
                         className="self-center"
                         />
                     </div>

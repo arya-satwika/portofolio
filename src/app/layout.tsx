@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.className} text-white antialiased min-w-screen min-h-screen background-gradient`}
       >
-        <Header className="sticky top-0"/>
+        <Header className="sticky top-0 z-30"/>
         {children}
       </body>
     </html>

@@ -9,8 +9,9 @@ export function Header({ className }: { className?: string }){
             <Image src="/icon-portofolio.svg" height={30} width={30} alt="home" />
         </Link>
       <span className="text-white pt-1 flex flex-row gap-4">
-        <Link href="about" className='hover:underline'>About</Link>
-        <Link href="projects" className='hover:underline'>Projects</Link>
+        <Link href="/about" className='hover:underline'>About</Link>
+        <Link href="/projects/coding" className='hover:underline'>Coding Projects</Link>
+        <Link href="/projects/video" className='hover:underline'>Video Projects</Link>
       </span>
       </div>
       <div className='flex flex-row gap-4 items-center mr-3'>

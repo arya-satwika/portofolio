@@ -29,7 +29,7 @@ export default function Home() {
             { src: "/habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 400 },
             { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
           ]}
-          title="Projects"
+          title="Coding Projects"
           className="max-w-310"
         >
           <ul className="list-disc">
@@ -46,7 +46,33 @@ export default function Home() {
             </li>
           </ul>
           <a 
-          href="projects"
+          href="projects/coding"
+          className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
+          >Read More...</a>
+        </ContentGrid>
+        <ContentGrid
+          images={[
+            { src: "/video_projects/gambes-mania.gif", alt: "Habit Clone Screenshot", width: 400 },
+            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
+          ]}
+          title="Video Projects"
+          className="max-w-310"
+        >
+          <ul className="list-disc">
+            <li>
+              <strong className="text-lg">Habit Clone</strong>: Aplikasi berbasis web untuk melacak rutinitas harian, 
+              dibangun dengan Svelte dan NeonDB. Projek pribadi pertama saya, dan projek web fullstack pertama saya. 
+              Alasan saya menggunakan Svelte adalah sintaks yang sederhan dibandingkan react, dan karena ia 
+              framework baru yang sedang naik daun.
+            </li>
+            <li>
+              <strong className="text-lg">Tutorly</strong>: Platform untuk membantu mahasiswa mencari tutor privat,
+              dibangung dengan Python dan CustomTKInter sebagai GUI. Merupakan Projek Ujian Akhir Semester mata kuliah 
+              Pemrograman Berorientasi Obyek dan merupakan projek GUI pertama saya.
+            </li>
+          </ul>
+          <a 
+          href="projects/video"
           className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
           >Read More...</a>
         </ContentGrid>
