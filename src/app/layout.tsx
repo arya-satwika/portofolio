@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Space_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import { Header } from "@/components/Header";
 import "@/app/globals.css";
 
@@ -9,11 +9,6 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
-  variable: "--font-space-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Arya Satwika - Portfolio",

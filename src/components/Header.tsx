@@ -4,9 +4,9 @@ import Image from "next/image"
 export function Header({ className }: { className?: string }){
   return( 
     <div className={`flex justify-between items-center p-2 bg-gradient-start/30 backdrop-blur-sm max-h-20 w-screen ${className}`}>
-      <div className="flex  gap-2 items-center ml-3">
+      <div className="flex gap-2 items-center ml-3">
         <Link href="/">
-            <Image src="icon-portofolio.svg" height={30} width={30} alt="" />
+            <Image src="/icon-portofolio.svg" height={30} width={30} alt="home" />
         </Link>
       <span className="text-white pt-1 flex flex-row gap-4">
         <Link href="about" className='hover:underline'>About</Link>

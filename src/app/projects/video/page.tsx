@@ -3,13 +3,14 @@ import Image from "next/image"
 export default function hobbiesPage(){
     return(
         <div className="flex flex-col justify-content-center mx-30">
-            <div className="mt-15 font-bold text-4xl">
-                Videos I've Made
+            <div className="mt-15 mb-6 font-bold text-4xl">
+                Videos I&apos;ve Made / Edited
             </div>
             <div className="grid grid-cols-3 justify-items-center">
                 <div className="w-fit bg-card-background p-4 rounded-2xl inset-shadow-md m-6">
                     <div className="rounded-xl flex flex-row w-70 h-70 overflow-hidden object-cover text-center">
                         <Image
+                        unoptimized
                         src="/video_projects/bf-gf.gif"
                         width={2000}
                         height={1920}
@@ -23,6 +24,7 @@ export default function hobbiesPage(){
                 <div className="w-fit bg-card-background p-4 rounded-2xl inset-shadow-md m-6">
                     <div className="object-cover overflow-hidden flex flex-row rounded-xl w-70 h-70">
                         <Image
+                        unoptimized
                         src="/video_projects/gambes-mania.gif"
                         width={1280}
                         height={720}
@@ -36,6 +38,7 @@ export default function hobbiesPage(){
                 <div className="w-fit bg-card-background p-4 rounded-2xl inset-shadow-md m-6">
                     <div className="object-cover overflow-hidden flex flex-row rounded-xl w-70 h-70">
                         <Image
+                        unoptimized
                         src="/video_projects/sebu-snippet.gif"
                         width={1280}
                         height={720}
