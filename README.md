@@ -6,6 +6,10 @@ Dibuat dengan **Next.JS**, **React** dan **Tailwind**
 
 Di Deploy menggunakan **netlify**
 
+## Links:
+- https://youtu.be/6mEd3CStADI
+- aryasatwika.netlify.app
+
 ### Componenent dan Library yang digunakan
 1. motion.dev
 2. shadcn ui
