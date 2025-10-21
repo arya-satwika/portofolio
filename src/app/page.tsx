@@ -26,11 +26,11 @@ export default function Home() {
         {/* <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/> */}
         <ContentGrid
           images={[
-            { src: "/habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 400 },
-            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
+            { src: "/habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 1517, height: 576 },
+            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 1104, height: 728 }
           ]}
           title="Coding Projects"
-          className="max-w-310"
+          className="max-w-310 "
         >
           <ul className="list-disc">
             <li>
@@ -48,27 +48,26 @@ export default function Home() {
           <a 
           href="projects/coding"
           className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
+          
           >Read More...</a>
         </ContentGrid>
         <ContentGrid
           images={[
-            { src: "/video_projects/gambes-mania.gif", alt: "Habit Clone Screenshot", width: 400 },
-            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 400 }
+            { src: "/video_projects/gambes-mania.gif", alt: "GAMBES MANIA", width: 1280, height: 720 },
+            { src: "/video_projects/ngomen-snippet.gif", alt: "Uprak Seni Budaya", width: 1280, height: 720 }
           ]}
           title="Video Projects"
           className="max-w-310"
+          direction="col"
         >
           <ul className="list-disc">
             <li>
-              <strong className="text-lg">Habit Clone</strong>: Aplikasi berbasis web untuk melacak rutinitas harian, 
-              dibangun dengan Svelte dan NeonDB. Projek pribadi pertama saya, dan projek web fullstack pertama saya. 
-              Alasan saya menggunakan Svelte adalah sintaks yang sederhan dibandingkan react, dan karena ia 
-              framework baru yang sedang naik daun.
+              <strong className="text-lg">Title Gambes Mania</strong>: Motion graphics yang dibuat di after effects untuk keperluan sosial media
+              tim supporter SMAN 15 Surabaya: GAMBESMANIA.
             </li>
             <li>
-              <strong className="text-lg">Tutorly</strong>: Platform untuk membantu mahasiswa mencari tutor privat,
-              dibangung dengan Python dan CustomTKInter sebagai GUI. Merupakan Projek Ujian Akhir Semester mata kuliah 
-              Pemrograman Berorientasi Obyek dan merupakan projek GUI pertama saya.
+              <strong className="text-lg">Ngomen</strong>: Teman saya dari HIMA Manajemen UNAIR minta tolong untuk mengedit video dan membuat intro
+              berhubung dia sedang sibuk dengan perkuliahan dan saya lagi kosong, saya bantuin karena pengen juga ngedit video dan gak tau mau ngedit apa
             </li>
           </ul>
           <a 
