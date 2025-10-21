@@ -10,10 +10,10 @@ Di Deploy menggunakan netlify
 2. shadcn ui
 
 ### Page / Route
-1. /: Homepage yang berisi informasi diri, beberapa project yang pernah dilakukan, dan hobi
-2. /about: About yang berisi CV dan bio
-3. /projects/coding: Projek koding yang kembangkan
-4. /projects/video: Portoflio video yang saya edit atau bantu buat
+1. (/): Homepage yang berisi informasi diri, beberapa project yang pernah dilakukan, dan hobi
+2. (/about): About yang berisi CV dan bio
+3. (/projects/coding): Projek koding yang kembangkan
+4. (/projects/video): Portoflio video yang saya edit atau bantu buat
 
 ### Tampilan Website
 ![homepage-1](public/screenshots/homepage-1.png)
