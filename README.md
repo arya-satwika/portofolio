@@ -1,9 +1,10 @@
 # Tugas Mandiri Pemrograman Berbasis Platform | Portofolio
 ## Arya Satwika | 24051204069
-Website ini merupakan hasil dari pekerjaan yang ditunjukkan untuk memnuhi penugasan ujian tengah semester mata kuliah Pemrograman Berbasis Platform, yang diampu oleh Bapak Rifqi Abdillah, S.Tr. T., M. Kom
+Website ini merupakan hasil dari pekerjaan yang ditunjukkan untuk memenuhi penugasan ujian tengah semester mata kuliah Pemrograman Berbasis Platform, yang diampu oleh Bapak Rifqi Abdillah, S.Tr. T., M. Kom
 
-Dibuat dengan Next.JS, React dan Tailwind
-Di Deploy menggunakan netlify
+Dibuat dengan **Next.JS**, **React** dan **Tailwind**
+
+Di Deploy menggunakan **netlify**
 
 ### Componenent dan Library yang digunakan
 1. motion.dev
