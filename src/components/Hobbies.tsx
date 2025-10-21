@@ -12,7 +12,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination"
 
-export type hobbiesProps ={
+type hobbiesProps ={
   className?: string;
   contents:  {
     title: string;
@@ -25,14 +25,14 @@ export function Hobbies({ className, contents }: hobbiesProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function handleNext() {
-    setCurrentIndex((prev) =>
-      prev === contents.length - 1 ? 0 : prev + 1
+    setCurrentIndex((current) =>
+      current === contents.length - 1 ? 0 : current + 1
     );
   }
 
   function handlePrev() {
-    setCurrentIndex((prev) =>
-      prev === 0 ? contents.length - 1 : prev - 1
+    setCurrentIndex((current) =>
+      current === 0 ? contents.length - 1 : current - 1
     );
   }
 

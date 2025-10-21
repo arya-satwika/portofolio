@@ -1,4 +1,3 @@
-import { div } from "motion/react-client";
 import Image from "next/image"
 
 type contentGridProps = {
@@ -9,11 +8,9 @@ type contentGridProps = {
   direction?: "row" | "col";
 }
 
-export function ContentGrid({children, className, images, title, direction = "row"}: contentGridProps){
-  if(direction !== "row" && direction !== "col"){
-    
-  }
 
+
+export function ContentGrid({children, className, images, title, direction = "row"}: contentGridProps){
   return (
     <div className={`flex flex-col m-6 bg-card-background p-4 rounded-2xl inset-shadow-md ${className}`}>
       <div>
@@ -22,9 +19,9 @@ export function ContentGrid({children, className, images, title, direction = "ro
       </div>
 
       <div className={`flex flex-${direction} gap-3 max-h-fit`}>
-        <div className={`grid grid-${direction === "col" ? "cols-2 w-fit" : "cols-1 w-180 "} gap-4 p-3  bg-card-content rounded-2xl inset-shadow-sm inset-shadow-red-100/45`}>
+        <div className={`grid grid-${direction === "col" ? "cols-2 w-fit" : "cols-1 w-180"} gap-4 p-3  bg-card-content rounded-2xl inset-shadow-sm inset-shadow-red-100/45`}>
             {images.map((image, index) => (
-          <div key={index} className="w-full flex-none relative">
+              <div key={index} className="w-full flex-none relative">
                 <Image 
                 key={index}
                 src={image.src}
@@ -33,7 +30,7 @@ export function ContentGrid({children, className, images, title, direction = "ro
                 className="w-full h-full object-fit rounded-lg" 
                 alt={image.alt} 
                 />
-          </div>
+              </div>
               ))}
         </div>
 

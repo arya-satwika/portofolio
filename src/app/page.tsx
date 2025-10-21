@@ -30,7 +30,7 @@ export default function Home() {
             { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 1104, height: 728 }
           ]}
           title="Coding Projects"
-          className="max-w-310 "
+          className="max-w-310"
         >
           <ul className="list-disc">
             <li>
@@ -48,7 +48,6 @@ export default function Home() {
           <a 
           href="projects/coding"
           className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
-          
           >Read More...</a>
         </ContentGrid>
         <ContentGrid
@@ -104,7 +103,7 @@ export default function Home() {
         ]}
       />
       </div>
-      </>
+    </>
   )
 
 }
