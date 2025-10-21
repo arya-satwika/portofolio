@@ -24,7 +24,7 @@ export function ContentGrid({children, className, images, title, direction = "ro
       <div className={`flex flex-${direction} gap-3 max-h-fit`}>
         <div className={`grid grid-${direction === "col" ? "cols-2 w-fit" : "cols-1 w-180 "} gap-4 p-3  bg-card-content rounded-2xl inset-shadow-sm inset-shadow-red-100/45`}>
             {images.map((image, index) => (
-          <div key={index} className="w-full h-fit flex-none relative">
+          <div key={index} className="w-full flex-none relative">
                 <Image 
                 key={index}
                 src={image.src}
