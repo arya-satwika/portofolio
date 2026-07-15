@@ -11,7 +11,7 @@ export default function hobbiesPage(){
                     <div className="rounded-xl flex flex-row w-70 h-70 overflow-hidden object-cover text-center">
                         <Image
                         unoptimized
-                        src="/video_projects/bf-gf.gif"
+                        src="/video_projects/bf-gf_2.webp"
                         width={2000}
                         height={1920}
                         alt="bf-gf"
@@ -39,7 +39,7 @@ export default function hobbiesPage(){
                     <div className="object-cover overflow-hidden flex flex-row rounded-xl w-70 h-70">
                         <Image
                         unoptimized
-                        src="/video_projects/sebu-snippet.gif"
+                        src="/video_projects/sebu-snippet_2.webp"
                         width={1280}
                         height={720}
                         alt="uprak-sebu"

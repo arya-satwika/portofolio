@@ -25,8 +25,14 @@ export function CV({ className }: { className?: string }) {
         <ul className="list-disc pl-5">
             <li>
                 <div className="flex flex-row justify-between">
-                    Asisten praktikum Pemrograman Dasar untuk angkatan 2025
-                    <span className="font-bold text-right">2025-Sekarang</span>
+                    Asisten Praktikum Pemrograman Dasar untuk angkatan 2025
+                    <span className="font-bold text-right">2025</span>
+                </div>
+            </li>
+            <li>
+                <div className="flex flex-row justify-between">
+                    Asisten Praktikum Struktur Data untuk angkatan 2025
+                    <span className="font-bold text-right">2025</span>
                 </div>
             </li>
         </ul>
