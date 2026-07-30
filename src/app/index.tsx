@@ -1,11 +1,15 @@
 import { Hobbies } from "@/components/Hobbies";
 import { ContentGrid } from "@/components/ContentGrid";
-import Image from "next/image";
+import { createFileRoute } from '@tanstack/react-router'
+import { Image } from '@unpic/react'
+
+export const Route = createFileRoute('/')({
+  component: Home,
+})
 
 
-export default function Home() {
+function Home() {
   return (
-    <>
     <div className="min-h-full min-w-screen">
       <div className="flex flex-col items-center">
         <div className="flex flex-row mt-6 items-center mx-35">
@@ -103,7 +107,6 @@ export default function Home() {
         ]}
       />
       </div>
-    </>
   )
 
 }

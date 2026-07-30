@@ -1,6 +1,11 @@
-import Image from "next/image"
+import { createFileRoute } from '@tanstack/react-router'
+import { Image } from '@unpic/react'
 
-export default function hobbiesPage(){
+export const Route = createFileRoute('/projects/video')({
+  component: hobbiesPage,
+})
+
+function hobbiesPage(){
     return(
         <div className="flex flex-col justify-content-center mx-30">
             <div className="mt-15 mb-6 font-bold text-4xl">
@@ -10,7 +15,6 @@ export default function hobbiesPage(){
                 <div className="w-fit bg-card-background p-4 rounded-2xl inset-shadow-md m-6">
                     <div className="rounded-xl flex flex-row w-70 h-70 overflow-hidden object-cover text-center">
                         <Image
-                        unoptimized
                         src="/video_projects/bf-gf_2.webp"
                         width={2000}
                         height={1920}
@@ -24,7 +28,6 @@ export default function hobbiesPage(){
                 <div className="w-fit bg-card-background p-4 rounded-2xl inset-shadow-md m-6">
                     <div className="object-cover overflow-hidden flex flex-row rounded-xl w-70 h-70">
                         <Image
-                        unoptimized
                         src="/video_projects/gambes-mania.gif"
                         width={1280}
                         height={720}
@@ -38,7 +41,6 @@ export default function hobbiesPage(){
                 <div className="w-fit bg-card-background p-4 rounded-2xl inset-shadow-md m-6">
                     <div className="object-cover overflow-hidden flex flex-row rounded-xl w-70 h-70">
                         <Image
-                        unoptimized
                         src="/video_projects/sebu-snippet_2.webp"
                         width={1280}
                         height={720}

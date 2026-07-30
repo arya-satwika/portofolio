@@ -1,7 +1,12 @@
-import Image from 'next/image';
-import * as motion from 'motion/react-client';
+import { createFileRoute } from '@tanstack/react-router'
+import { Image } from '@unpic/react'
+import { motion } from "motion/react"
 
-export default function ProjectsPage() {
+export const Route = createFileRoute('/projects/coding')({
+  component: ProjectsPage,
+})
+
+function ProjectsPage() {
     return (
         <div>
             <div className="mx-30 mt-15">

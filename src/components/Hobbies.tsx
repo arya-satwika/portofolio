@@ -2,7 +2,7 @@
 import { useState } from "react";
 import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
-import Image from "next/image";
+import { Image } from '@unpic/react'
 import {
   Pagination,
   PaginationContent,

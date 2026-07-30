@@ -1,7 +1,12 @@
+import { createFileRoute } from '@tanstack/react-router'
 import { CV } from "@/components/CV"
-import Image from "next/image"
+import { Image } from '@unpic/react'
 
-export default function About() {
+export const Route = createFileRoute('/about')({
+  component: About,
+})
+
+function About() {
     return (
         <div className="mx-30">
             <div className="flex flex-row items-center justify-between">
