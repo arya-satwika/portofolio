@@ -28,56 +28,83 @@ function Home() {
           <Image src="/headshot.webp" width={1000} height={1000} alt="" className='row-span-2 place-self-start w-[450px]'/>
         </div>
         {/* <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/> */}
-        <ContentGrid
-          images={[
-            { src: "/habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 1517, height: 576 },
-            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 1104, height: 728 }
-          ]}
-          title="Coding Projects"
-          className="max-w-310"
-        >
-          <ul className="list-disc">
-            <li>
-              <strong className="text-lg">Habit Clone</strong>: Aplikasi berbasis web untuk melacak rutinitas harian, 
-              dibangun dengan Svelte dan NeonDB. Projek pribadi pertama saya, dan projek web fullstack pertama saya. 
-              Alasan saya menggunakan Svelte adalah sintaks yang sederhan dibandingkan react, dan karena ia 
-              framework baru yang sedang naik daun.
-            </li>
-            <li>
-              <strong className="text-lg">Tutorly</strong>: Platform untuk membantu mahasiswa mencari tutor privat,
-              dibangung dengan Python dan CustomTKInter sebagai GUI. Merupakan Projek Ujian Akhir Semester mata kuliah 
-              Pemrograman Berorientasi Obyek dan merupakan projek GUI pertama saya.
-            </li>
-          </ul>
-          <a 
-          href="projects/coding"
-          className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
-          >Read More...</a>
-        </ContentGrid>
-        <ContentGrid
-          images={[
-            { src: "/video_projects/gambes-mania.gif", alt: "GAMBES MANIA", width: 1280, height: 720 },
-            { src: "/video_projects/ngomen-snippet.gif", alt: "Uprak Seni Budaya", width: 1280, height: 720 }
-          ]}
-          title="Video Projects"
-          className="max-w-310"
-          direction="col"
-        >
-          <ul className="list-disc">
-            <li>
-              <strong className="text-lg">Title Gambes Mania</strong>: Motion graphics yang dibuat di after effects untuk keperluan sosial media
-              tim supporter SMAN 15 Surabaya: GAMBESMANIA.
-            </li>
-            <li>
-              <strong className="text-lg">Ngomen</strong>: Teman saya dari HIMA Manajemen UNAIR minta tolong untuk mengedit video dan membuat intro
-              berhubung dia sedang sibuk dengan perkuliahan dan saya lagi kosong, saya bantuin karena pengen juga ngedit video dan gak tau mau ngedit apa
-            </li>
-          </ul>
-          <a 
-          href="projects/video"
-          className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
-          >Read More...</a>
-        </ContentGrid>
+        <div className="mt-4 grid grid-rows-2 grid-cols-4 bg-accent-foreground/22 p-[2px] gap-[2px]">
+          <ContentGrid
+            image={
+              { src: "/video_projects/ngomen-snippet.gif", alt: "gambesmania", width: 1280, height: 720 }
+            }
+            title="Intro Ngomen"
+            className="max-w-310"
+            description="Intro video yang saya buat untuk teman saya dari HIMA Manajemen UNAIR, Ngomen."
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/video_projects/gambes-mania.gif", alt: "gambesmania", width: 1280, height: 720 }
+            }
+            title="Title Card Gambesmania"
+            className="max-w-310"
+            description="Title card yang saya buat ketika bergabung dengan video and design team gambesmania"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/video_projects/bf-gf.gif", alt: "boyfriend girlfriend", width: 1280, height: 720 }
+            }
+            title="Boyfriend Girlfriend"
+            className="max-w-310"
+            description="tiktok / instagram edit i made for fun because the ATSV movie was so good"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/video_projects/sebu-snippet.gif", alt: "uprak seni budaya", width: 1280, height: 720 }
+            }
+            title="Uprak Seni Budaya"
+            className="max-w-310"
+            description="tiktok / instagram edit i made with the extra BTS footage i shot"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/tutorly/history.webp", alt: "tutorly", width: 1280, height: 720 }
+            }
+            title="Tutorly"
+            className="max-w-310"
+            description="Projek akhir mata kuliah pemrograman berbasis obyek. dibuat dengan python dan customtkinter"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={{
+              src: "/habitclone-screenshot.webp",
+              alt: "Habit Clone Screenshot",
+              width: 1517,
+              height: 576,
+            }}
+            title="HabitClone"
+            description="A for fun project i made, tried to clone habitkit (android app). made with svelte and sveltekit"
+            className="max-w-310"
+          >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/air-alam.webp", alt: "website air alam", width: 1280, height: 720 }
+            }
+            title="Website Air Alam"
+            className="max-w-310"
+            description="projek akhir mata kuliah kewirausahaan, pertama kali menggunakan payment gateway midtrans"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/paper-scanner.webp", alt: "paper scanner", width: 1280, height: 720 }
+            }
+            title="Paper Scanner"
+            className="max-w-310"
+            description="projek akhir mata kuliah pengolahan citra digital, dibuat menggunakan opencv dan python"
+            >
+          </ContentGrid>
+        </div>
       </div>
       <Hobbies 
         className="mx-40 my-10 inset-0 static z-40" 
@@ -87,7 +114,7 @@ function Home() {
             description: "Saya suka bermain game, terutama game kompetitif FPS seperti Valorant, The Finals." + 
             "Saya juga menikmati game open-world yang slow paced seperti Legend of Zelda: Breath of the wild, " + 
             "Spider-man 1 dan 2, dan terkadang bermain game multiplayer bersama teman-temanku",
-            image: { src: "/games-1.png", alt: "Gaming Image", width: 1170, height: 1572 }
+            image: { src: "/games-1.webp", alt: "Gaming Image", width: 1170, height: 1572 }
           },
           {
             title: "Editing Video",
@@ -95,14 +122,14 @@ function Home() {
             " Adobe After Effects dan Davinci Resolve, mulai video editing karena ingin membuat konten youtube," +
             " ternyata tidak semudah itu membuat konten youtube yang ingin ditonton orang orang, sekarang hanya" +
             " mengedit karena iseng aja, dan saya suka melihat animasi yang smooth dan keren.",
-            image: { src: "/AE-timeline.png", alt: "Editing Video Image", width: 1405, height: 1025 }
+            image: { src: "/AE-timeline.webp", alt: "Editing Video Image", width: 1405, height: 1025 }
           },
           {
             title: "Music",
             description: "Saya senang mendengarkan musik, terutama genre hip-hop dan lagu 2000-an. Beberapa artis favorit saya adalah Tyler, The Creator," +
             "Kendrick Lamar, Foxy Shazam, Lilas / YOASOBI. Belakangan ini saya mendapatkan lagu baru dari menonton film dan series yang dibuat oleh James Gunn, Director"+
             " yang selalu memasukkan lagu-lagu keren ke dalam filmnya dan selalu membuat saya menambah playlist saya.",
-            image: { src: "/musics-tiles.png", alt: "Music Image", width: 1000, height: 1000}
+            image: { src: "/musics-tiles.webp", alt: "Music Image", width: 1000, height: 1000}
           }
         ]}
       />

@@ -1,43 +1,55 @@
 import { Image } from '@unpic/react'
+import { circOut, easeOut, motion } from "motion/react"
 
 type contentGridProps = {
   children?: React.ReactNode;
   className?: string;
-  images: { src: string, alt: string, width: number, height: number }[];
+  image: { src: string, alt: string, width: number, height: number };
   title: string;
-  direction?: "row" | "col";
+  description: string;
 }
 
 
 
-export function ContentGrid({children, className, images, title, direction = "row"}: contentGridProps){
+export function ContentGrid({children, className, image, title, description}: contentGridProps){
   return (
-    <div className={`flex flex-col m-6 bg-card-background p-4 rounded-2xl inset-shadow-md ${className}`}>
-      <div>
-      <h1 className="ml-4 font-bold text-2xl text-gray-200">{title}</h1>
-      <hr className="border-solid border-0.2 mx-2 mt-2 mb-6 rounded-lg"/>
-      </div>
+    <div className={`${className}`}>
+      <div className="relative">
 
-      <div className={`flex flex-${direction} gap-3 max-h-fit`}>
-        <div className={`grid grid-${direction === "col" ? "cols-2 w-fit" : "cols-1 w-180"} gap-4 p-3  bg-card-content rounded-2xl inset-shadow-sm inset-shadow-red-100/45`}>
-            {images.map((image, index) => (
-              <div key={index} className="w-full flex-none relative">
-                <Image 
-                key={index}
-                src={image.src}
-                width={image.width} 
-                height={image.height}
-                className="w-full h-full object-fit rounded-lg" 
-                alt={image.alt} 
-                />
+
+        {/* main square */}
+        <motion.div 
+          className={"relative max-h-fit"}
+          whileHover={{ scale: 1.1, zIndex: 50 }}
+          transition={{ ease:circOut }}
+        >
+          {/* image */}
+          <div className={"z-0 size-70"}>
+              <Image 
+              src={image.src}
+              width={image.width} 
+              height={image.height}
+              className="size-full object-cover" 
+              alt={image.alt} 
+              />
+          </div>
+          {/* description */}
+          <motion.div 
+            className="z-10 absolute inset-0 bg-main-red/70 size-full text-pretty tracking-tighter hover:backdrop-blur-sm"
+            initial={{ opacity: 0 }}
+            whileHover={{ opacity: 1}}
+          >
+            <div className='m-3'>
+
+              <h1 className="p-2 font-bold text-3xl text-gray-200">{title}</h1>
+              <div className="p-2 text-xl">
+                {description}
               </div>
-              ))}
-        </div>
+            </div>
+          </motion.div>
 
-        <div className="text-pretty ml-8">
-          {children}
-        </div>
-      </div>
+        </motion.div>
+    </div>
     </div>
   )
 }
