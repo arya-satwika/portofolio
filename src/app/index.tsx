@@ -12,74 +12,93 @@ function Home() {
   return (
     <div className="min-h-full min-w-screen">
       <div className="flex flex-col items-center">
-        <div className="flex flex-row mt-6 items-center mx-35">
-          <div className='max-w-[900px]'>
-          <h1 className="text-4xl font-bold">Hi, im 
-            <span className="text-main-red"> Arya Satwika</span>
-          </h1>
-          <p className="text-lg">
-            Namaku Arya Satwika, mahasiswa Teknik Informatika UNESA angkatan 2024
-            <br />Cinta teknologi, coding, computer, dan thinkering.
-            Hobi bermain game, mendengarkan musik, dan editing / designing.
-            Sedang mendalami dunia web development seperti React, dan NextJS,
-            ingin menjadi Fullstack Web Developer dan UI/UX Designer di masa depan.
-          </p>
+        <div className="flex flex-row mt-20 items-center mx-auto">
+          <div className='max-w-2xl'>
+            <p className="text-md">
+              i am an aspiring developer, currently a student at Universitas Negeri Surabaya. trying to learn as much as i can
+            </p>
           </div>
-          <Image src="/headshot.webp" width={1000} height={1000} alt="" className='row-span-2 place-self-start w-[450px]'/>
+          {/* <Image src="/headshot.webp" width={1000} height={1000} alt="" className='row-span-2 place-self-start w-[450px]'/> */}
         </div>
         {/* <hr className="text-gray-300 border-solid border-0.2 m-5 min-w-300 rounded-lg"/> */}
-        <ContentGrid
-          images={[
-            { src: "/habitclone-screenshot.png", alt: "Habit Clone Screenshot", width: 1517, height: 576 },
-            { src: "/tutorly/tutorly-main.png", alt: "Tutorly Main Screenshot", width: 1104, height: 728 }
-          ]}
-          title="Coding Projects"
-          className="max-w-310"
-        >
-          <ul className="list-disc">
-            <li>
-              <strong className="text-lg">Habit Clone</strong>: Aplikasi berbasis web untuk melacak rutinitas harian, 
-              dibangun dengan Svelte dan NeonDB. Projek pribadi pertama saya, dan projek web fullstack pertama saya. 
-              Alasan saya menggunakan Svelte adalah sintaks yang sederhan dibandingkan react, dan karena ia 
-              framework baru yang sedang naik daun.
-            </li>
-            <li>
-              <strong className="text-lg">Tutorly</strong>: Platform untuk membantu mahasiswa mencari tutor privat,
-              dibangung dengan Python dan CustomTKInter sebagai GUI. Merupakan Projek Ujian Akhir Semester mata kuliah 
-              Pemrograman Berorientasi Obyek dan merupakan projek GUI pertama saya.
-            </li>
-          </ul>
-          <a 
-          href="projects/coding"
-          className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
-          >Read More...</a>
-        </ContentGrid>
-        <ContentGrid
-          images={[
-            { src: "/video_projects/gambes-mania.gif", alt: "GAMBES MANIA", width: 1280, height: 720 },
-            { src: "/video_projects/ngomen-snippet.gif", alt: "Uprak Seni Budaya", width: 1280, height: 720 }
-          ]}
-          title="Video Projects"
-          className="max-w-310"
-          direction="col"
-        >
-          <ul className="list-disc">
-            <li>
-              <strong className="text-lg">Title Gambes Mania</strong>: Motion graphics yang dibuat di after effects untuk keperluan sosial media
-              tim supporter SMAN 15 Surabaya: GAMBESMANIA.
-            </li>
-            <li>
-              <strong className="text-lg">Ngomen</strong>: Teman saya dari HIMA Manajemen UNAIR minta tolong untuk mengedit video dan membuat intro
-              berhubung dia sedang sibuk dengan perkuliahan dan saya lagi kosong, saya bantuin karena pengen juga ngedit video dan gak tau mau ngedit apa
-            </li>
-          </ul>
-          <a 
-          href="projects/video"
-          className="mt-6 inline-block transition-all ease-in-out text-clickable  hover:text-clickable-hover"
-          >Read More...</a>
-        </ContentGrid>
+        <div className="mt-4 grid grid-rows-4 grid-cols-2 bg-accent-foreground/10 gap-[2px] lg:grid-cols-4 lg:grid-rows-2">
+          <ContentGrid
+            image={
+              { src: "/video_projects/ngomen-snippet.gif", alt: "gambesmania", width: 1280, height: 720 }
+            }
+            title="Intro Ngomen"
+            className="max-h-310"
+            description="Intro video yang saya buat untuk teman saya dari HIMA Manajemen UNAIR, Ngomen."
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/video_projects/gambes-mania.gif", alt: "gambesmania", width: 1280, height: 720 }
+            }
+            title="Title Card Gambesmania"
+            className="max-h-310"
+            description="Title card yang saya buat ketika bergabung dengan video and design team gambesmania"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/video_projects/bf-gf_2.webp", alt: "boyfriend girlfriend", width: 2000, height: 1920 }
+            }
+            title="Boyfriend Girlfriend"
+            className="max-h-310"
+            description="tiktok / instagram edit i made for fun because the ATSV movie was so good"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/video_projects/sebu-snippet_2.webp", alt: "uprak seni budaya", width: 1080, height: 1300 }
+            }
+            title="Uprak Seni Budaya"
+            className="max-h-310"
+            description="tiktok / instagram edit i made with the extra BTS footage i shot"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/tutorly/history.webp", alt: "tutorly", width: 702, height: 832 }
+            }
+            title="Tutorly"
+            className="max-h-310"
+            description="Projek akhir mata kuliah pemrograman berbasis obyek. dibuat dengan python dan customtkinter"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={{
+              src: "/habitclone-screenshot.webp", alt: "Habit Clone Screenshot", width: 1517, height: 576,
+            }}
+            title="HabitClone"
+            description="A for fun project i made, tried to clone habitkit (android app). made with svelte and sveltekit"
+            className="max-h-310"
+          >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/air-alam.webp", alt: "website air alam", width: 1008, height: 1008 }
+            }
+            title="Website Air Alam"
+            className="max-h-310"
+            description="projek akhir mata kuliah kewirausahaan, pertama kali menggunakan payment gateway midtrans"
+            >
+          </ContentGrid>
+          <ContentGrid
+            image={
+              { src: "/paper-scanner.webp", alt: "paper scanner", width: 731, height: 731 }
+            }
+            title="Paper Scanner"
+            className="max-h-310"
+            description="projek akhir mata kuliah pengolahan citra digital, dibuat menggunakan opencv dan python"
+            >
+          </ContentGrid>
+        </div>
       </div>
-      <Hobbies 
+
+
+      {/* <Hobbies 
         className="mx-40 my-10 inset-0 static z-40" 
         contents={[
           {
@@ -105,7 +124,7 @@ function Home() {
             image: { src: "/musics-tiles.png", alt: "Music Image", width: 1000, height: 1000}
           }
         ]}
-      />
+      /> */}
       </div>
   )
 

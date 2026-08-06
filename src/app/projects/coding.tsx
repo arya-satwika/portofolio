@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Image } from '@unpic/react'
 import { motion } from "motion/react"
+import { Link } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/projects/coding')({
   component: ProjectsPage,
@@ -12,7 +13,7 @@ function ProjectsPage() {
             <div className="mx-30 mt-15">
                 <h1 className="text-4xl font-bold mb-8">My Projects</h1>
 
-                <h2 className="text-2xl font-bold  text-main-red">Habit Clone</h2>
+                <a href="https://habitclone.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-main-red">Habit Clone</a>
                 <hr className="mb-4 border-clickable "/>
 
                 <div className="flex flex-row justify-content-between w-full">
@@ -20,7 +21,7 @@ function ProjectsPage() {
                     <p>
                         Aplikasi Web Fullstack yang dikembangkan menggunakan Svelte dan Typescript
                         untuk membantu melacak rutinitas tiap hari, progres dapat dilihat dengan kotak yang berwarna.
-                        terinspirasi dari graf github commits.
+                        terinspirasi dari heatmap github commits.
                         Backend menggunakan NeonDB sebagai database dan Drizzle ORM untuk interaksi database.
                         Disini saya menggunakan svelte karena saya dengan sintaksnya sederhana seperti python pada dunia web development,
                         dan juga karena svelte adalah framework baru dibandingkan framework lain seperti angular atau vue.
