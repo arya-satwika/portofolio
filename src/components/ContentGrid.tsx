@@ -1,16 +1,17 @@
 import { Image } from '@unpic/react'
+import { circOut, easeOut, motion } from "motion/react"
 
 type contentGridProps = {
   children?: React.ReactNode;
   className?: string;
-  images: { src: string, alt: string, width: number, height: number }[];
+  image: { src: string, alt: string, width: number, height: number };
   title: string;
-  direction?: "row" | "col";
+  description: string;
 }
 
 
 
-export function ContentGrid({children, className, images, title, direction = "row"}: contentGridProps){
+export function ContentGrid({children, className, image, title, description}: contentGridProps){
   return (
     <div className={`${className} bg-linear-to-br from-gradient-start to-gradient-end bg-fixed p-3`}>
         
@@ -42,8 +43,8 @@ export function ContentGrid({children, className, images, title, direction = "ro
               <div className="p-2 text-md">
                 {description}
               </div>
-              ))}
-        </div>
+            </div>
+          </motion.div>
 
         </motion.div>
     </div>
