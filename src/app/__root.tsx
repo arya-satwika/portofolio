@@ -23,6 +23,10 @@ export const Route = createRootRoute({
         rel: 'stylesheet',
         href: appCss,
       },
+      {
+        rel: 'icon',
+        href: '/icon-portofolio.svg'
+      }
     ],
   }),
   component: RootLayout,
@@ -35,9 +39,9 @@ function RootLayout() {
         <HeadContent />
       </head>
       <body
-        className={"text-white antialiased min-w-screen min-h-screen background-gradient"}
+        className={"text-white antialiased background-gradient"}
       >
-        <Header className="sticky top-0 z-30"/>
+        <Header className="z-30"/>
         <Outlet />
         <Scripts />
       </body>

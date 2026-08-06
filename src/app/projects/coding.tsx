@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Image } from '@unpic/react'
 import { motion } from "motion/react"
+import { Link } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/projects/coding')({
   component: ProjectsPage,
@@ -8,11 +9,11 @@ export const Route = createFileRoute('/projects/coding')({
 
 function ProjectsPage() {
     return (
-        <div>
-            <div className="mx-60 mt-15">
+        <div className='w-screen'>
+            <div className="max-w-2xl mx-auto mt-15">
                 <h1 className="text-4xl font-bold mb-8">My Projects</h1>
 
-                <h2 className="text-2xl font-bold  text-main-red">Habit Clone</h2>
+                <a href="https://habitclone.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-main-red">Habit Clone</a>
                 <hr className="mb-4 border-clickable "/>
 
                 <div className="flex flex-row justify-content-between w-full">
@@ -20,12 +21,11 @@ function ProjectsPage() {
                     <p>
                         Aplikasi Web Fullstack yang dikembangkan menggunakan Svelte dan Typescript
                         untuk membantu melacak rutinitas tiap hari, progres dapat dilihat dengan kotak yang berwarna.
-                        terinspirasi dari graf github commits.
+                        terinspirasi dari heatmap github commits.
                         Backend menggunakan NeonDB sebagai database dan Drizzle ORM untuk interaksi database.
-                        Disini saya menggunakan svelte karena saya suka dengan sintaksnya sederhana seperti python pada dunia web development,
+                        Disini saya menggunakan svelte karena saya suka dengan sintaksnya sederhana,
                         dan juga karena svelte adalah framework baru dibandingkan framework lain seperti angular atau vue.
-                        Tetapi mencari tutorial svelte susah sekali karena masih baru, dan ekosistemnya tidak seluas dan selengkap react. 
-                        Svelte juga mengabstraksi banyak fungsi / kode yang bisa membuatnya berasa seperti magic, dan tidak begitu cocok untuk beginner
+                        Namun svelte juga mengabstraksi banyak fungsi / kode yang bisa membuatnya berasa seperti magic, dan tidak begitu cocok untuk beginner
                     </p>
                     </span>
                     
@@ -88,7 +88,7 @@ function ProjectsPage() {
             </div>
 
             {/* tutorly */}
-            <div className="mx-60 mt-25">
+            <div className='max-w-2xl mt-15 mx-auto min-w-20'>
                 <h2 className="text-2xl font-bold  text-main-red">Tutorly</h2>
                 <hr className="mb-4 border-clickable "/>
 
@@ -157,7 +157,7 @@ function ProjectsPage() {
                 </div>
             </div>
             {/* air alam */}
-            <div className="mx-60 mt-25">
+            <div className="mx-auto max-w-2xl mt-25">
                 <h2 className="text-2xl font-bold  text-main-red">Website Air Alam</h2>
                 <hr className="mb-4 border-clickable "/>
 

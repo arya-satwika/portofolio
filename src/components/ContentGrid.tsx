@@ -13,10 +13,8 @@ type contentGridProps = {
 
 export function ContentGrid({children, className, image, title, description}: contentGridProps){
   return (
-    <div className={`${className}`}>
-      <div className="relative">
-
-
+    <div className={`${className} bg-linear-to-br from-gradient-start to-gradient-end bg-fixed p-3`}>
+        
         {/* main square */}
         <motion.div 
           className={"relative max-h-fit"}
@@ -24,7 +22,7 @@ export function ContentGrid({children, className, image, title, description}: co
           transition={{ ease:circOut }}
         >
           {/* image */}
-          <div className={"z-0 size-70"}>
+          <div className={"z-0 size-62"}>
               <Image 
               src={image.src}
               width={image.width} 
@@ -35,21 +33,20 @@ export function ContentGrid({children, className, image, title, description}: co
           </div>
           {/* description */}
           <motion.div 
-            className="z-10 absolute inset-0 bg-main-red/70 size-full text-pretty tracking-tighter hover:backdrop-blur-sm"
+            className="z-10 absolute inset-0 bg-main-red/70 text-pretty tracking-tighter hover:backdrop-blur-sm"
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1}}
           >
             <div className='m-3'>
 
               <h1 className="p-2 font-bold text-3xl text-gray-200">{title}</h1>
-              <div className="p-2 text-xl">
+              <div className="p-2 text-md">
                 {description}
               </div>
             </div>
           </motion.div>
 
         </motion.div>
-    </div>
     </div>
   )
 }

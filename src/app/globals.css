@@ -3,6 +3,8 @@
 @import '@fontsource-variable/dm-sans';
 @import '@fontsource-variable/jetbrains-mono';
 @import '@fontsource-variable/space-grotesk';
+@import '@fontsource/dm-mono';
+@import '@fontsource/ibm-plex-mono';
 
 @custom-variant dark (&:is(.dark *));
 @layer components{
@@ -63,6 +65,7 @@
 }
 
 :root {
+  --app-bg: linear-gradient(to bottom right, rgb(13, 0, 5), rgb(18, 0, 20))
   --radius: 0.625rem;
   --background: oklch(0.985 0 0);
   --foreground: oklch(0.145 0 0);
@@ -100,8 +103,6 @@
 }
 
 .dark {
-  --font-sans: 'Space Grotesk', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
   --background: oklch(20.019% 0.00002 271.152);
   --foreground: oklch(98.511% 0.00011 271.152);
   --card: oklch(0.205 0 0);
@@ -142,6 +143,8 @@
   body {
     @apply bg-background text-foreground;
     @apply bg-linear-to-br from-gradient-start to-gradient-end;
+    /* background-image: var(--app-bg);
+    background-attachment: fixed; */
     @apply font-medium
   }
 }
