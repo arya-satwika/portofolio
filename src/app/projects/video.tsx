@@ -4,6 +4,11 @@ import { div } from 'motion/react-client'
 
 export const Route = createFileRoute('/projects/video')({
   component: hobbiesPage,
+  head: () =>({
+    meta: [
+        { title: "Video Projects | Arya Satwik" }
+    ]
+  })
 })
 
 function hobbiesPage(){

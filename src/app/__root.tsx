@@ -16,7 +16,7 @@ export const Route = createRootRoute({
         name: "viewport",
         content: "width=device-width, initial-scale=1",
       },
-      { title: "Arya Satwika - Portofolio" }
+      { title: "Arya Satwika | Portofolio" }
     ],
     links: [
       {
@@ -25,7 +25,7 @@ export const Route = createRootRoute({
       },
       {
         rel: 'icon',
-        href: '/icon-portofolio.svg'
+        href: '/logo A icon v2.svg'
       }
     ],
   }),

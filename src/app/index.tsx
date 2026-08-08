@@ -13,7 +13,7 @@ function Home() {
     <div className="min-h-full min-w-screen">
       <div className="flex flex-col items-center">
         <div className="flex flex-row mt-20 items-center mx-auto">
-          <div className='max-w-2xl'>
+          <div className='max-w-2xl px-3'>
             <p className="text-md">
               i am an aspiring developer, currently a student at Universitas Negeri Surabaya. trying to learn as much as i can
             </p>

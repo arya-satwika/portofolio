@@ -74,9 +74,6 @@ export function CV({ className }: { className?: string }) {
 
             <h3>Language Skills</h3>
             <p>Bahasa Indonesia (Native), English (Fluent)</p>
-            
-            <h3>Tools</h3>
-            <p>Svelte, TypeScript, Tailwind, C++, Python, Adobe Premiere Pro, Adobe After Effects, Davinci Resolve</p>
         </div>
         </div>
     )

@@ -2,9 +2,15 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Image } from '@unpic/react'
 import { motion } from "motion/react"
 import { Link } from '@tanstack/react-router'
+import { title } from 'process'
 
 export const Route = createFileRoute('/projects/coding')({
   component: ProjectsPage,
+  head: () =>({
+    meta: [
+        { title: "Coding Projects | Arya Satwik" }
+    ]
+  })
 })
 
 function ProjectsPage() {
@@ -166,12 +172,11 @@ function ProjectsPage() {
                     <p>
                         Website air mineral 'Air Alam' yang dibuat secara berkelompok untuk memenuhi tugas akhir mata kuliah
                         kewirausahaan. Role saya di kelompok ini adalah sebagai backend dan frontend developer, di sisi frontend 
-                        saya tidak berkontribusi banyak karena design dan tampilan web nya sudah dibuat oleh teman saya di figma,
                         saya hanya mengkonversikan design figma ke code. 
                         Kontribusi terbanyak saya ada di backend terutama di bagian payment menggunakan midtrans namun implementasinya 
                         menggunakan sandbox sehingga transaksi tidak benar - benar terjadi.
-                        Ini juga merupakan projek kedua saya yang menggunakan NextJS dan React, kita memilih stack ini karena kita memerlukan
-                        fitur payment, saya yang mengajukan stack ini ke kelompok saya karena menurut saya tidak ada alternatif lain yang lebih bagus.
+                        Ini juga merupakan projek kedua saya yang menggunakan NextJS dan React, saya yang mengajukan stack ini ke 
+                        kelompok saya karena menurut saya ini stack yang paling cocok untuk use case kita.
 
 
                     </p>

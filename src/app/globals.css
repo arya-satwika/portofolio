@@ -145,6 +145,7 @@
     @apply bg-linear-to-br from-gradient-start to-gradient-end;
     /* background-image: var(--app-bg);
     background-attachment: fixed; */
-    @apply font-medium
+    @apply subpixel-antialiased
+    /* @apply font-medium */
   }
 }
