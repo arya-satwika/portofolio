@@ -54,24 +54,9 @@ export function CV({ className }: { className?: string }) {
             </li>
         </ul>
         
-        <h2 className="font-bold text-lg text-main-red mt-5">Pengalaman Organisasi</h2>
-        <hr/>
-        <ul className="list-disc pl-5">
-            <li>
-                <div className="flex flex-row justify-between">
-                    Video Editor HIMA Manajemen UNAIR
-                    <span className="font-bold text-right">2024</span>
-                </div>
-            </li>
-        </ul>
-        
         <h2 className="font-bold text-lg text-main-red mt-5">Tambahan</h2>
         <hr/>
-        <div className="grid grid-cols-2 gap-4">
-
-            <h3>Keahlian</h3>
-            <p>Pekerja keras, sangat bertanggung jawab, cepat belajar</p>
-
+        <div className="flex flex-row justify-between gap-4">
             <h3>Language Skills</h3>
             <p>Bahasa Indonesia (Native), English (Fluent)</p>
         </div>

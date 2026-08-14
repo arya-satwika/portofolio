@@ -15,7 +15,7 @@ function About() {
     return (
         <div>
 
-        <div className="mx-auto max-w-2xl mt-20">
+        <div className="type-content">
             <div className="flex flex-row items-center justify-between">
                 <div>
 
@@ -37,9 +37,18 @@ function About() {
                 className="w-[200px] h-[200px] ml-2"/> */}
             </div>
             <div className='mt-10 text-lg'>
-                <div className='flex flex-row'><span className='text-clickable font-normal mr-2 shrink-0'>Systems \</span> C++, Typescript, Python</div>
-                <div className='flex flex-row'><span className='text-clickable font-normal mr-2 shrink-0'>Frontend \ </span> Svelte, React, Tailwind, customtkinter,HTML, CSS, QML / quickshell</div>
-                <div className='flex flex-row'><span className='text-clickable font-normal mr-2 shrink-0'>Tools \ </span>Tanstack, NextJS, Midtrans, Drizzle, uploadthing, Figma, After Effects, Davinci Resolve</div>
+                <div className='flex flex-row'><span className='text-clickable font-normal shrink-0 w-[8ch]'>
+                    Systems</span><span className=' text-clickable mr-2'>\</span>
+                    C++, Typescript, Python
+                </div>
+                <div className='flex flex-row'><span className='text-clickable font-normal shrink-0 w-[8ch]'>
+                    Frontend</span><span className='text-clickable mr-2'>\</span>
+                    Svelte, React, Tailwind, customtkinter,HTML, CSS, QML / quickshell
+                </div>
+                <div className='flex flex-row'><span className='text-clickable font-normal shrink-0 w-[8ch]'>
+                    Tools</span><span className='   text-clickable mr-2'>\</span>
+                    Tanstack, NextJS, Midtrans, Drizzle, uploadthing, Figma, After Effects, Davinci Resolve
+                </div>
             </div>
         </div>
         <CV className="mt-10 mb-20 max-w-4xl mx-auto" />

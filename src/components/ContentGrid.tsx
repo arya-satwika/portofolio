@@ -7,17 +7,18 @@ type contentGridProps = {
   image: { src: string, alt: string, width: number, height: number };
   title: string;
   description: string;
+  link?: string;
 }
 
 
 
-export function ContentGrid({children, className, image, title, description}: contentGridProps){
+export function ContentGrid({children, className, image, title, description, link}: contentGridProps){
   return (
     <div className={`${className} bg-linear-to-br from-gradient-start to-gradient-end bg-fixed p-3`}>
         
         {/* main square */}
         <motion.div 
-          className={"relative max-h-fit"}
+          className={"relative size-62"}
           whileHover={{ scale: 1.1, zIndex: 50 }}
           transition={{ ease:circOut }}
         >
@@ -33,13 +34,15 @@ export function ContentGrid({children, className, image, title, description}: co
           </div>
           {/* description */}
           <motion.div 
-            className="z-10 absolute inset-0 bg-main-red/70 text-pretty tracking-tighter hover:backdrop-blur-sm"
+            className="z-10 absolute inset-0 size-full bg-main-red/70 text-pretty tracking-tighter hover:backdrop-blur-sm"
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1}}
           >
             <div className='m-3'>
+              <div className='font-bold p-2 text-3xl text-gray-200'>
+                <a href={link}>{title}</a>
 
-              <h1 className="p-2 font-bold text-3xl text-gray-200">{title}</h1>
+              </div>
               <div className="p-2 text-md">
                 {description}
               </div>

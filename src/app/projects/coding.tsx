@@ -3,6 +3,7 @@ import { Image } from '@unpic/react'
 import { motion } from "motion/react"
 import { Link } from '@tanstack/react-router'
 import { title } from 'process'
+import * as React from 'react';
 
 export const Route = createFileRoute('/projects/coding')({
   component: ProjectsPage,
@@ -15,23 +16,20 @@ export const Route = createFileRoute('/projects/coding')({
 
 function ProjectsPage() {
     return (
-        <div className='w-screen'>
-            <div className="max-w-2xl mx-auto mt-15">
+        <div>
+            <div className="type-content">
                 <h1 className="text-4xl font-bold mb-8">My Projects</h1>
 
-                <a href="https://habitclone.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-main-red">Habit Clone</a>
+                <a href="https://github.com/arya-satwika/habit-clone" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold text-main-red">Habit Clone</a>
                 <hr className="mb-4 border-clickable "/>
 
                 <div className="flex flex-row justify-content-between w-full">
                     <span>
                     <p>
-                        Aplikasi Web Fullstack yang dikembangkan menggunakan Svelte dan Typescript
-                        untuk membantu melacak rutinitas tiap hari, progres dapat dilihat dengan kotak yang berwarna.
-                        terinspirasi dari heatmap github commits.
-                        Backend menggunakan NeonDB sebagai database dan Drizzle ORM untuk interaksi database.
-                        Disini saya menggunakan svelte karena saya suka dengan sintaksnya sederhana,
-                        dan juga karena svelte adalah framework baru dibandingkan framework lain seperti angular atau vue.
-                        Namun svelte juga mengabstraksi banyak fungsi / kode yang bisa membuatnya berasa seperti magic, dan tidak begitu cocok untuk beginner
+                        First webapp that i ever made, i chose svelte because i thought it was easier than react, turns out
+                        svelte abstracts a lot of stuff which made it harder for me to learn, and the syntax looked easy on paper
+                        but it was horrible to code with. Runes was nice it was very easy to have reactive states but it became a lot 
+                        more complicated when you start using effect, now i know why people use react lol
                     </p>
                     </span>
                     
@@ -46,7 +44,7 @@ function ProjectsPage() {
                     </div>
                 </div>
             </div>
-            <div className="min-w-screen bg-main-red min-h-[200px] py-4 mt-4">
+            <div className="min-w-screen bg-main-red min-h-50 py-4 mt-4">
                 <div className='overflow-scroll'>
                 <motion.div 
                 className="flex flex-row min-h-fit items-center gap-5"
@@ -95,16 +93,16 @@ function ProjectsPage() {
 
             {/* tutorly */}
             <div className='max-w-2xl mt-15 mx-auto min-w-20'>
-                <h2 className="text-2xl font-bold  text-main-red">Tutorly</h2>
+                <a className="text-2xl font-bold text-main-red" href='https://github.com/arya-satwika/tutorly'>Tutorly</a>
                 <hr className="mb-4 border-clickable "/>
 
                 <div className="flex flex-row justify-content-between w-full">
                     <span>
                     <p>
-                        Aplikasi desktop yang dikembangkan menggunakan Python dan CustomTKInter sebagai GUI,
-                        untuk membantu mahasiswa yang sedang kesulitan dalam suatu mata kuliah tetapi tidak ada yang bisa mengajar.
-                        Tutorly menghubungkan mahasiswa dengan mahasiswa lainnya yang lebih paham dengan materi dan ingin mengajarkannya
-                        kepada seseorang
+                        My first desktop 'app' because this project is purely for a grade, made it for my OOP class.
+                        it has no database no real transaction logic all of those are dummy values, but this was my first time
+                        coding something relatively big using python. The GUI library i used was customtkinter a more modern version
+                        of tkinter
                     </p>
                     </span>
                     
@@ -117,7 +115,7 @@ function ProjectsPage() {
                     </div>
                 </div>
             </div>
-            <div className="min-w-screen bg-main-red min-h-[200px] py-4 mt-4 mb-10">
+            <div className="min-w-screen bg-main-red min-h-50 py-4 mt-4 mb-10">
                 {/* pictures slide */}
                 <div className='overflow-scroll'>
                     <motion.div 
@@ -162,23 +160,18 @@ function ProjectsPage() {
                     </motion.div>
                 </div>
             </div>
-            {/* air alam */}
+            {/* paper scanner */}
             <div className="mx-auto max-w-2xl mt-25">
-                <h2 className="text-2xl font-bold  text-main-red">Website Air Alam</h2>
+                <a className="text-2xl font-bold  text-main-red" href='https://github.com/arya-satwika/air-alam-website'>Website Air Alam</a>
                 <hr className="mb-4 border-clickable "/>
 
                 <div className="flex flex-row justify-content-between w-full">
                     <span>
                     <p>
-                        Website air mineral 'Air Alam' yang dibuat secara berkelompok untuk memenuhi tugas akhir mata kuliah
-                        kewirausahaan. Role saya di kelompok ini adalah sebagai backend dan frontend developer, di sisi frontend 
-                        saya hanya mengkonversikan design figma ke code. 
-                        Kontribusi terbanyak saya ada di backend terutama di bagian payment menggunakan midtrans namun implementasinya 
-                        menggunakan sandbox sehingga transaksi tidak benar - benar terjadi.
-                        Ini juga merupakan projek kedua saya yang menggunakan NextJS dan React, saya yang mengajukan stack ini ke 
-                        kelompok saya karena menurut saya ini stack yang paling cocok untuk use case kita.
-
-
+                        My third web project and second react project, first one being my personal webpage.
+                        This is a final group project my role was migrating the figma designs that my friends made into code.
+                        I also developed the payment stuff using midtrans, the docs for it were confusing there arent alot of 
+                        guides for React and typescript but i made it work!
                     </p>
                     </span>
                     
@@ -193,7 +186,7 @@ function ProjectsPage() {
                     </div>
                 </div>
             </div>
-            <div className="min-w-screen bg-main-red min-h-[200px] py-4 mt-4 mb-10">
+            <div className="min-w-screen bg-main-red min-h-50 py-4 mt-4 mb-10">
                 {/* pictures slide */}
                 <div className='overflow-scroll'>
                     <motion.div 
@@ -233,6 +226,73 @@ function ProjectsPage() {
                         width={600}
                         height={200}
                         alt="cart.webp"
+                        className="h-100"
+                        />
+                    </motion.div>
+                </div>
+            </div>
+            {/* paper scanner */}
+            <div className="mx-auto max-w-2xl mt-25">
+                <a className="text-2xl font-bold  text-main-red" href='https://github.com/arya-satwika/air-alam-website'>Paper Scanner</a>
+                <hr className="mb-4 border-clickable "/>
+
+                <div className="flex flex-row justify-content-between w-full">
+                    <span>
+                    <p>
+                        just a basic python script i made for my final semester's project 
+                        in my digital image processing class. Basically a clone of the camscanner phone app but its not as good
+                    </p>
+                    </span>
+                    
+                    <div className="ml-9">
+                    <h3 className="mb-3">Tools</h3>
+                    <ul className="list-disc">
+                        <li>Python</li>
+                        <li>OpenCV</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="min-w-screen bg-main-red min-h-50 py-4 mt-4 mb-10">
+                {/* pictures slide */}
+                <div className='overflow-scroll'>
+                    <motion.div 
+                    className="flex flex-row min-h-fit items-center gap-5"
+                    initial={{ x: 400 }}
+                    animate={{ x: 0 }}
+                    transition={{ 
+                        ease: "easeOut",
+                        type: "spring",
+                        duration: 2.2
+                        
+                    }}
+                    >
+                        <Image 
+                        src="/paper_scanner/paper_scanner_1.png"
+                        width={1350}
+                        height={874}
+                        alt="home.webp"
+                        className="h-100"
+                        />
+                        <Image 
+                        src="/paper_scanner/paper_scanner_2.png"
+                        width={1350}
+                        height={874}
+                        alt="paper_scanner"
+                        className="h-100"
+                        />
+                        <Image 
+                        src="/paper_scanner/paper_scanner_4.png"
+                        width={1350}
+                        height={874}
+                        alt="paper_scanner"
+                        className="h-100"
+                        />
+                        <Image 
+                        src="/paper_scanner/paper_scanner_5.png"
+                        width={1350}
+                        height={874}
+                        alt="paper_scanner"
                         className="h-100"
                         />
                     </motion.div>
