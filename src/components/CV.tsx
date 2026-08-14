@@ -9,7 +9,7 @@ export function CV({ className }: { className?: string }) {
             <li>
                 <div className="flex flex-row justify-between">
                     S1 Teknik Informatika Universitas Negeri Surabaya
-                    <span className="font-bold text-right">2024-Sekarang</span>
+                    <span className="font-bold text-right">2024-Now</span>
                 </div>
             </li>
             <li>
