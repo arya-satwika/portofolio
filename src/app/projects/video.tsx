@@ -6,7 +6,7 @@ export const Route = createFileRoute('/projects/video')({
   component: hobbiesPage,
   head: () =>({
     meta: [
-        { title: "Video Projects | Arya Satwik" }
+        { title: "Video Projects | Arya Satwika" }
     ]
   })
 })
