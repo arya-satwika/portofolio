@@ -9,7 +9,7 @@ export const Route = createFileRoute('/projects/coding')({
   component: ProjectsPage,
   head: () =>({
     meta: [
-        { title: "Coding Projects | Arya Satwik" }
+        { title: "Coding Projects | Arya Satwika" }
     ]
   })
 })
