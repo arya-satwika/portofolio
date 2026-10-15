@@ -144,7 +144,17 @@
 }
 
 .type-content{
-  @apply max-w-2xl mx-auto px-3 mt-20
+  @apply max-w-2xl mx-auto px-3 mt-20 text-[0.95rem] sm:text-base
+}
+
+/* Slightly smaller base font on mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  .type-content {
+    @apply px-4 mt-12;
+  }
 }
 
 @layer base {
